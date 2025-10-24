@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_project_process_steps",
+  "info": {
+    "displayName": "processStep",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

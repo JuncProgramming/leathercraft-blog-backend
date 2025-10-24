@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Wallets",
+        "Bags",
+        "Belts",
+        "Accessories",
+        "Custom"
+      ]
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "completionTime": {
+      "type": "string",
+      "required": false
+    },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true
+    },
+    "materials": {
+      "type": "text",
+      "required": false
+    },
+    "lessons": {
+      "type": "text",
+      "required": false
+    },
+    "processStep": {
+      "type": "component",
+      "component": "project.process-step",
+      "repeatable": true
+    }
+  }
+}
